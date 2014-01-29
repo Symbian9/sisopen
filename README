@@ -1,0 +1,72 @@
+WHAT SISOPEN DOES
+
+Sisopen is a tool to list and extract the content of SIS files.
+SIS files are EPOC installation files used in Symbian-based
+smartphones like many S60 Nokia phones.
+
+SYSTEMS WHERE SYSOPEN CAN RUN
+
+Sisopen is an ANSI-C program, mainly targetted to Linux and other
+Unix-like systems it can be compiled almost in every system with
+a C compiler having zlib.
+
+COMPILING SISOPEN
+
+Just try
+
+    make
+
+it should compile without problem if you have zlib installed
+in your system (not only the runtime, also the development
+files are needed).
+
+COMPILING WITHOUT ZLIB
+
+Defining NOZLIB at compile time makes you able to compile without
+zlib, but only file listing is available in this mode, files
+can't be extracted.
+
+In order to compile without zlib support just try
+
+    make nozlib
+
+USAGE
+
+    sisopen filename.sis (in order to list .sis file content)
+
+    sisopen -x filename.sis (extract files)
+
+    sisopen -v filename.sis (show a lot of information about the sis file)
+
+    sisopen -h (show a little help page)
+
+It is possible to pass more than one file name to sisopen. Every
+file is processed in the order they are given. Options don't
+require to be passed in a specific position so
+
+    sisopen -x filename.sis
+
+is equivalent to
+
+    sisopen filename.sis -x
+
+
+LICENSE
+
+Sisopen is released under the GPL license version 2.
+
+AUTHOR & CREDITS
+
+Sisopen was written by Salvatore Sanfilippo (antirez at gmail dot com)
+using the documentation describing the SIS format written by
+Alexander Thoukydides (alex at thouky dot co dot uk) available at
+http://homepage.ntlworld.com/thouky/software/psifs/sis.html
+
+CONTACTS, PATCHES, ...
+
+Visit http://antirez.com/page/sisopen
+Please write an email to antirez at gmail dot com for patches,
+suggestions, bug reports.
+
+Have fun,
+Salvatore Sanfilippo
