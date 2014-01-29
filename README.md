@@ -63,7 +63,7 @@ For compilation instructions read the README file inside the tar.gz (resp. git c
 
 ## Author & Credits ##
 
-Sisopen was written by Salvatore Sanfilippo (antirez at gmail dot com) using the documentation describing the SIS format written by Alexander Thoukydides (alex at thouky dot co dot uk) available at http://homepage.ntlworld.com/thouky/software/psifs/sis.html
+Sisopen was written by Salvatore Sanfilippo (antirez at gmail dot com) using the documentation describing the SIS format written by Alexander Thoukydides (alex at thouky dot co dot uk) available at http://www.thoukydides.webspace.virginmedia.com/sis.html.
 
 This git repository is a copy of the original code and text found at http://oldblog.antirez.com/page/sisopen to preserve the code for the case that "oldblog" will vanish finally.
 
